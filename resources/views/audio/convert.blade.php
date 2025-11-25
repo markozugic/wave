@@ -38,7 +38,7 @@
         @csrf
         <div class="field">
             <label for="audio">WAV file</label>
-            <input id="audio" type="file" name="audio" accept="audio/wav" required>
+            <input id="audio" type="file" name="audio" required>
             @error('audio')
             <div class="error">{{ $message }}</div>
             @enderror
